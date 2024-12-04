@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Use Google Fonts */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header and Navigation */
+.g-header {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.g-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.g-nav-list {
+    display: flex;
+    gap: 2rem;
+}
+
+.g-nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.g-nav-link:hover,
+.g-nav-link.active {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.g-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Page Containers */
+.g-main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.g-main h1 {
+    font-size: 3rem;
+    color: #1a73e8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.g-main p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Card Layout for Samples */
+.g-samples-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.g-sample-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.g-sample-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.g-sample-card h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #333;
+}
+
+.g-sample-card p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+    color: #666;
+}
+
+.g-tech-stack {
+    list-style: none;
+    padding: 0 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.g-tech-stack li {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .g-nav-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .g-main h1 {
+        font-size: 2.2rem;
+    }
+
+    .g-sample-card img {
+        height: 150px;
+    }
+
+    .g-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+}
+ 
