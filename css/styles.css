@@ -92,10 +92,8 @@ ul {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: left;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .g-sample-card img {
